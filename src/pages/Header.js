@@ -1,4 +1,5 @@
 import profile from '../images/profile.jpg'
+import styles from '../style/style.css'
 function Header() {
 
     const headerTextStyle = {
@@ -12,7 +13,7 @@ function Header() {
         width: '20%'
     }
     return (
-        <div style={{backgroundColor: "black", height: '100vh'}}>
+        <div className={styles.row} style={{backgroundColor: "black", height: '100vh'}}>
             <div style={headerTextStyle}>Hi, I am Kapil Gupta</div>
             <img src={profile} alt="profile" style={profileImgStyle}/>
         </div>
